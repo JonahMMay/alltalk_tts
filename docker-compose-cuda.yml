@@ -5,6 +5,7 @@ services:
     restart: unless-stopped
     ports:
       - "7851:7851"
+      - "7852:7852"
     volumes:
       - ./outputs:/app/outputs/
       - ./models:/app/models/
