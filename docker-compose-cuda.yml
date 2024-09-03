@@ -1,7 +1,9 @@
 version: '3.8'
 services:
   alltalk-tts:
-    image: erew123/alltalk_tts:cuda
+    container_name: alltalk-tts
+    image: alltalk-tts:beta
+    build: .
     restart: unless-stopped
     ports:
       - "7851:7851"
